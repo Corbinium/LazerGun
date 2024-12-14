@@ -1,0 +1,8 @@
+* source LASERGUN2
+X_Qref1         N04876 N04876 N04948 awb2n3906 PARAMS:                         
++                    
+R_R2         N04876 0  51 TC=0,0 
+X_LaserSight1         0 0 N04892 SLD1121VS
+X_Q2         N04892 N04876 N04948 awb2n3906 PARAMS:                            
++                 
+V_V2         N04948 0 6Vdc

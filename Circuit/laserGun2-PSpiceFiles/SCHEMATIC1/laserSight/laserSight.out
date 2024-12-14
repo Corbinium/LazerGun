@@ -1,0 +1,175 @@
+
+**** 12/14/24 16:24:31 ***** PSpice 23.1.0 (18 July 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-laserSight"  [ C:\Users\corbb\Documents\workspace\LazerGun\Circuit\laserGun2-PSpiceFiles\SCHEMATIC1\laserSig
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "laserSight.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\corbb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "C:\Users\corbb\Documents\School\ECE_2280\HW\customComponents\CD4007.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LASERGUN2
+X_Qref1         N04876 N04876 N04948 awb2n3906 PARAMS:                         
++                    
+R_R2         N04876 0  51 TC=0,0 
+X_LaserSight1         0 0 N04892 SLD1121VS
+X_Q2         N04892 N04876 N04948 awb2n3906 PARAMS:                            
++                 
+V_V2         N04948 0 6Vdc
+
+**** RESUMING laserSight.cir ****
+.END
+
+**** 12/14/24 16:24:31 ***** PSpice 23.1.0 (18 July 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-laserSight"  [ C:\Users\corbb\Documents\workspace\LazerGun\Circuit\laserGun2-PSpiceFiles\SCHEMATIC1\laserSig
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_LaserSight1.dlaser 
+          IS    0            
+          BV    2            
+         IBV   10.000000E-06 
+          RS    2            
+
+
+               X_LaserSight1.pdetec 
+          IS   10.000000E-15 
+          BV   15            
+         IBV   10.000000E-06 
+         CJO    5.000000E-12 
+
+
+**** 12/14/24 16:24:31 ***** PSpice 23.1.0 (18 July 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-laserSight"  [ C:\Users\corbb\Documents\workspace\LazerGun\Circuit\laserGun2-PSpiceFiles\SCHEMATIC1\laserSig
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Qref1.model7  X_Q2.model7     
+               PNP             PNP             
+       LEVEL    1               1            
+          IS  218.880000E-15  218.880000E-15 
+          EG    1.11            1.11         
+          BF  200             200            
+          NF    1.221           1.221        
+         VAF   50              50            
+         IKF     .15             .15         
+         ISE    2.364000E-12    2.364000E-12 
+          NE    2.155           2.155        
+          BR    4.68            4.68         
+          NR    1.221           1.221        
+         VAR  500             500            
+          NC    1               1            
+         ISS    0               0            
+          RB   12              12            
+         RBM   12              12            
+          RE     .1              .1          
+          RC    1.5             1.5          
+         CJE    6.250000E-12    6.250000E-12 
+         VJE     .916            .916        
+         MJE     .3898           .3898       
+         CJC    6.600000E-12    6.600000E-12 
+         VJC    1.67            1.67         
+         MJC     .4065           .4065       
+        XCJC     .5              .5          
+         CJS    0               0            
+         VJS     .7              .7          
+         MJS     .5              .5          
+          TF  361.720000E-12  361.720000E-12 
+         XTF   21              21            
+         VTF    4.7             4.7          
+         ITF     .26             .26         
+          TR   19.920000E-09   19.920000E-09 
+         XTB    1.7             1.7          
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 12/14/24 16:24:31 ***** PSpice 23.1.0 (18 July 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-laserSight"  [ C:\Users\corbb\Documents\workspace\LazerGun\Circuit\laserGun2-PSpiceFiles\SCHEMATIC1\laserSig
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N04876)    5.1164 (N04892)     .7757 (N04948)    6.0000                        
+
+(X_LaserSight1.I)    0.0000           (X_LaserSight1.op)    0.0000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.062E-01
+    X_LaserSight1.Vid   0.000E+00
+
+    TOTAL POWER DISSIPATION   1.24E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/14/24 16:24:31 ***** PSpice 23.1.0 (18 July 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-laserSight"  [ C:\Users\corbb\Documents\workspace\LazerGun\Circuit\laserGun2-PSpiceFiles\SCHEMATIC1\laserSig
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

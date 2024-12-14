@@ -1,0 +1,29 @@
+* source LAZERGUN
+V_V1         N03347 0 6Vdc
+X_power         N03347 N00857 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_Trigger         N00331 N00580 Sw_tClose PARAMS: tClose=0 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_Reload         N00331 N00598 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_SwitchTeam         N00331 N00863 Sw_tClose PARAMS: tClose=0 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_SwitchWeapon         N00331 N00881 Sw_tClose PARAMS: tClose=0 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_LaserSight         0 0 N02731 SLD1121VS
+D_FireDiode         N01364 0 MLED81
+D_HitSensor         N00331 N01035 D1N4446_1 
+X_Qref         N02455 N02455 N02600 awb2n3906 PARAMS:                          
++                   
+X_Q1         N02731 N02455 N02600 awb2n3906 PARAMS:                            
++                 
+R_R1         N02455 0  51 TC=0,0 
+X_laser         N03347 N02600 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+V_V2         N04117 0 6Vdc
+R_R2         N04073 0  51 TC=0,0 
+X_Qref1         N04073 N04073 N04117 awb2n3906 PARAMS:                         
++                    
+X_Q2         N041052 N04073 N04117 awb2n3906 PARAMS:                           
++                  
+D_laserSight         N041052 0 LS_M47K-TYP 
