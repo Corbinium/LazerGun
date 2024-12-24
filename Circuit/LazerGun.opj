@@ -4,20 +4,124 @@
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
-    (Allegro Netlist Directory "allegro")
+    ("Allegro Netlist Directory" "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
     (File ".\lazergun.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (Display_Online_DRC_Results "FALSE")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE"))
   (Folder "Layout")
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (File ".\lazergun-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
   (Folder "Referenced Projects")
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files"))
-  (Folder "Logs"))
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lazergun-pspicefiles\schematic1\lasersighttest.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lazergun-pspicefiles\schematic1\lasersighttest.sim"
+        (DisplayName "SCHEMATIC1-laserSightTest")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (PartMRUSelector
+    (LS_M47K-TYP
+      (FullPartName "LS_M47K-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_MINITOPLED.OLB")
+      (DeviceIndex "0"))
+    (LR_A67F-TYP
+      (FullPartName "LR_A67F-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_SIDELED.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (2N3906
+      (FullPartName "2N3906.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJP.OLB")
+      (DeviceIndex "0"))
+    (1N4446
+      (FullPartName "1N4446.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\EDIODE.OLB")
+      (DeviceIndex "0"))
+    (MLED81
+      (FullPartName "MLED81.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\OPTO.OLB")
+      (DeviceIndex "0"))
+    (SLD1121VS
+      (FullPartName "SLD1121VS.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\OPTO.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (ESP32-DEVKIT-V1
+      (FullPartName "ESP32-DEVKIT-V1.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\CUSTOMPARTS\ESP32_DEVKIT_V1_ALT\ESP32-DEVKIT-V1.OLB")
+      (DeviceIndex "0"))
+    (Sw_tClose
+      (FullPartName "Sw_tClose.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_23.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "corbb")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\OrCADX_23.1\tools\capture\library\customParts\ESP32_DEVKIT_V1_alt")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\corbb\Documents\workspace\LazerGun\Circuit\lazergun.dsn")
+      (Path "Design Resources"
+         "C:\Users\corbb\Documents\workspace\LazerGun\Circuit\lazergun.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\corbb\Documents\workspace\LazerGun\Circuit\lazergun.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 880"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 921")
+        (Scroll "-246 -7")
+        (Zoom "118")
+        (Occurrence "/"))
+      (Path "C:\USERS\CORBB\DOCUMENTS\WORKSPACE\LAZERGUN\CIRCUIT\LAZERGUN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

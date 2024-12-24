@@ -1,18 +1,31 @@
 #include <Arduino.h>
+#include <string>
+#include <sstream>
 
 // put function declarations here:
 int myFunction(int, int);
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200);
+  pinMode(2, OUTPUT);
+  digitalWrite(2, HIGH);
+
+  pinMode(35, INPUT);
+  pinMode(33, INPUT);
+  pinMode(32, INPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  // digitalWrite(2, HIGH);
+  // // Serial.println("LED is on");
+  // delay(1000);
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  // digitalWrite(2, LOW);
+  // // Serial.println("LED is off");
+  // delay(1000);
+
+  int state = analogRead(32);
+  std::ostringstream message;
+  message << "  " << state;
+  Serial.println(message.str().c_str());
 }

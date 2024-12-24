@@ -4,20 +4,43 @@
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library")
-    (Allegro Netlist Directory "allegro")
+    ("Allegro Netlist Directory" "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
     (File ".\lasergun2.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
   (Folder "Layout")
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (File ".\lasergun2-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
   (Folder "Referenced Projects")
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files"))
-  (Folder "Logs"))
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lasergun2-pspicefiles\schematic1\lasersight.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lasergun2-pspicefiles\schematic1\lasersight.sim"
+        (DisplayName "SCHEMATIC1-laserSight")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 880"))
+      (Tab 0))))
