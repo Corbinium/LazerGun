@@ -1,2 +1,4 @@
+ lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\breakout.lib, offset=431, size=44
+ lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\breakout.lib, offset=10475, size=475
  lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\bjp.lib, offset=92131, size=1361
- lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\opto.lib, offset=42707, size=504
+ lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\bjn.lib, offset=89158, size=1497

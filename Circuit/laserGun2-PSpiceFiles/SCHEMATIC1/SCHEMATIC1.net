@@ -1,8 +1,125 @@
 * source LASERGUN2
-X_Qref1         N04876 N04876 N04948 awb2n3906 PARAMS:                         
-+                    
-R_R2         N04876 0  51 TC=0,0 
-X_LaserSight1         0 0 N04892 SLD1121VS
-X_Q2         N04892 N04876 N04948 awb2n3906 PARAMS:                            
+V_Vin_1         N06264 0 5Vdc
+R_internal         N06324 N06260  33k TC=0,0 
+V_lightSignal         N38821 0 DC 0Vdc AC 1Vac 
+R_hitSensorModulator         N06260 N06264  300 TC=0,0 
+R_RX0_1         0 N06324  10Meg TC=0,0 
+R_3V3         N19842 N111360  0 TC=0,0 
+V_3V87         N111360 0 3.3V
+V_3V89         N114740 0 0Vdc
+R_CLK         0 N114740  0 TC=0,0 
+V_3V91         N115400 0 0Vdc
+R_SD0         0 N115400  0 TC=0,0 
+V_3V93         N116060 0 0Vdc
+R_SD1         0 N116060  0 TC=0,0 
+V_3V95         N116720 0 0Vdc
+R_D0         0 N116720  0 TC=0,0 
+R_D15         N20932 N117380  0 TC=0,0 
+V_3V97         N117380 0 3.3Vdc
+V_3V105         N120480 0 0Vdc
+V_3V103         N120100 0 0Vdc
+V_3V101         N119720 0 3.3Vdc
+R_RX2         0 N120100  0 TC=0,0 
+R_D5         N21680 N120860  0 TC=0,0 
+R_D18         N20357 N121240  0 TC=0,0 
+V_3V109         N121240 0 3.3Vdc
+R_D4         N20918 N119720  0 TC=0,0 
+R_TX2         0 N120480  0 TC=0,0 
+R_D2         N20925 N119340  0 TC=0,0 
+V_3V99         N119340 0 3.3Vdc
+V_3V107         N120860 0 3.3Vdc
+R_D23         0 N125200  0 TC=0,0 
+R_D19         N20364 N123300  0 TC=0,0 
+R_D21         N20371 N123680  0 TC=0,0 
+V_3V121         N125200 0 0Vdc
+V_3V113         N123680 0 3.3Vdc
+V_3V119         N124820 0 0Vdc
+V_3V115         N124060 0 0Vdc
+V_3V117         N124440 0 3.3Vdc
+V_3V111         N123300 0 3.3Vdc
+R_RX0         N16668 N124060  10Meg TC=0,0 
+R_TX0         N16376 N124440  0 TC=0,0 
+R_D22         0 N124820  0 TC=0,0 
+V_3V153         N136080 0 0Vdc
+R_EN         0 N136840  0 TC=0,0 
+V_3V123         N130380 0 6Vdc
+V_3V151         N135700 0 0Vdc
+V_3V127         N131140 0 0Vdc
+R_D34         N19443 N135700  10Meg TC=0,0 
+V_3V143         N134180 0 3.3Vac
+R_D14         0 N133040  0 TC=0,0 
+V_3V137         N133040 0 0Vdc
+R_D26         0 N133800  0 TC=0,0 
+V_3V155         N136460 0 0Vdc
+V_3V129         N131520 0 0Vdc
+V_3V157         N136840 0 0Vdc
+V_3V149         N135320 0 0Vdc
+R_D27         0 N133420  0 TC=0,0 
+V_3V133         N132280 0 0Vdc
+R_SD3         0 N131520  0 TC=0,0 
+V_3V145         N134560 0 0Vdc
+R_D33         0 N134560  0 TC=0,0 
+R_D13         0 N132280  0 TC=0,0 
+V_3V135         N132660 0 0Vdc
+R_D12         0 N132660  0 TC=0,0 
+R_SD2         0 N131900  0 TC=0,0 
+V_3V141         N133800 0 0Vdc
+R_D32         N19471 N134940  10Meg TC=0,0 
+R_VIN         N17421 N130380  0 TC=0,0 
+R_D35         N19450 N135320  10Meg TC=0,0 
+R_VN         N19231 N136080  10Meg TC=0,0 
+V_3V139         N133420 0 0Vdc
+V_3V131         N131900 0 0Vdc
+R_VP         N19238 N136460  10Meg TC=0,0 
+R_D25         N21023 N134180  0 TC=0,0 
+R_CMD         0 N131140  0 TC=0,0 
+V_3V147         N134940 0 0Vdc
+R_fireDiodeModulator1         N159661 N16376  100 TC=0,0 
+X_Q2         N17847 N17829 N17421 awb2n3906 PARAMS:                            
 +                 
-V_V2         N04948 0 6Vdc
+R_currentModulator         N17829 0  51 TC=0,0 
+X_Qref1         N17829 N17829 N17421 awb2n3906 PARAMS:                         
++                    
+X_trigger         N19231 N19842 Sw_tClose PARAMS: tClose=0 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_Reload         N19238 N19842 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_stealthM         N19443 N19842 Sw_tClose PARAMS: tClose=0 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_cWeapon         N19450 N19842 Sw_tClose PARAMS: tClose=0 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_cTeam         N19471 N19842 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+R_D36         N202731 N20357  1k TC=0,0 
+R_D37         N203091 N20364  1k TC=0,0 
+R_D38         N203451 N20371  1k TC=0,0 
+R_speaker         N21023 0  100k TC=0,0 
+R_motor         N21680 0  100k TC=0,0 
+X_Qref         N25783 N25783 N25709 awb2n3906 PARAMS:                          
++                   
+X_Q1         N25799 N25783 N25709 awb2n3906 PARAMS:                            
++                 
+R_R5         N25783 0  51 TC=0,0 
+V_3V158         N25709 0 6Vdc
+R_fireDiodeModulator         N26191 N26342  100 TC=0,0 
+V_Vin_2         N26342 0 6Vdc
+D_fireDiode         N26191 0 Dbreak 
+D_health1R         N20918 0 Dbreak 
+D_health2R         N20925 0 Dbreak 
+D_health3R         N20932 0 Dbreak 
+D_health3L         N20932 0 Dbreak 
+D_health2L         N20925 0 Dbreak 
+D_health1L         N20918 0 Dbreak 
+D_fireDiode1         N159661 0 Dbreak 
+D_teamLED-R         N203451 0 Dbreak 
+D_teamLED-G         N203091 0 Dbreak 
+D_teamLED-B         N202731 0 Dbreak 
+D_laserDiode1         N17847 0 Dbreak 
+R_hitSensorModulator1         N35327 N17421  300 TC=0,0 
+V_lightSignal1         N38498 0 DC 0Vdc AC 1Vac 
+R_internal1         N16668 N35327  33k TC=0,0 
+X_hitSensor1         N16668 N38498 0 awb2n3904 PARAMS:                         
++                    
+X_hitSensor         N06324 N38821 0 awb2n3904 PARAMS:                          
++                   
+D_laserDiode         N25799 0 Dbreak 
